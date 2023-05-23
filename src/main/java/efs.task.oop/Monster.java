@@ -7,12 +7,12 @@ interface Fighter {
 public abstract class Monster implements Fighter {
     private int health;
     private int damage;
-    private Boolean isAlive;
+    //private Boolean isAlive;
 
     public Monster(int health, int damage) {
         this.health = health;
         this.damage = damage;
-        isAlive = true;
+        //isAlive = true;
     }
     public int getHealth() {
         return health;
@@ -22,9 +22,9 @@ public abstract class Monster implements Fighter {
         return damage;
     }
 
-    public Boolean getAlive() {
-        return isAlive;
-    }
+//    public Boolean getAlive() {
+//        return isAlive;
+//    }
 
     public void setHealth(int health) {
         this.health = health;
@@ -34,7 +34,7 @@ public abstract class Monster implements Fighter {
         this.damage = damage;
     }
 
-    public void setAlive(Boolean alive) {
-        isAlive = alive;
-    }
+//    public void setAlive(Boolean alive) {
+//        isAlive = alive;
+//    }
 }

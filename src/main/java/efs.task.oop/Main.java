@@ -35,7 +35,6 @@ public class Main {
         while(monsterCounter < 2) {
             villagers[villagerCounter].attack(monsters[monsterCounter]);
             if(monsters[monsterCounter].getHealth() <= 0) {
-                monsters[monsterCounter].setAlive(false);
                 monsterCounter += 1;
             }
             if(monsterCounter >= 2) {
@@ -43,7 +42,6 @@ public class Main {
             }
             monsters[monsterCounter].attack(villagers[villagerCounter]);
             if(villagers[villagerCounter].getHealth() <= 0) {
-                villagers[villagerCounter].setAlive(false);
                 villagerCounter += 1;
             }
 

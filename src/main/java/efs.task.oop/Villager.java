@@ -3,13 +3,13 @@ public class Villager implements Fighter{
     private String name;
     private int age;
     private int health;
-    private Boolean isAlive;
+    //private Boolean isAlive;
 
     public Villager(String name, int age) {
         this.name = name;
         this.age = age;
         this.health = 100;
-        isAlive = true;
+        //isAlive = true;
     }
 
     public String getName() {
@@ -24,9 +24,9 @@ public class Villager implements Fighter{
         return health;
     }
 
-    public Boolean getAlive() {
-        return isAlive;
-    }
+//    public Boolean getAlive() {
+//        return isAlive;
+//    }
 
     public void setName(String name) {
         this.name = name;
@@ -40,9 +40,9 @@ public class Villager implements Fighter{
         this.health = health;
     }
 
-    public void setAlive(Boolean alive) {
-        isAlive = alive;
-    }
+//    public void setAlive(Boolean alive) {
+//        isAlive = alive;
+//    }
 
     public void sayHello() {
         System.out.println("Greetings traveler... I'm " + getName() + " and I'm " + getAge() + " years old.");
