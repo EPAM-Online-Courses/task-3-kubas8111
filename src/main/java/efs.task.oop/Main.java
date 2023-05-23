@@ -1,27 +1,32 @@
+package efs.task.oop;
 import javax.swing.*;
 import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
         Villager kashya = new Villager("Kashya", 30);
-        Villager akara = new ExtraordinaryVillager("Akara", 40, ExtraordinaryVillager.Skill.SHELTER);
+        ExtraordinaryVillager akara = new ExtraordinaryVillager("Akara", 40, ExtraordinaryVillager.Skill.SHELTER);
         Villager gheed = new Villager("Gheed", 50);
-        Villager deckardCain = new ExtraordinaryVillager("Deckard Cain", 85, ExtraordinaryVillager.Skill.IDENTIFY);
+        ExtraordinaryVillager deckardCain = new ExtraordinaryVillager("Deckard Cain", 85, ExtraordinaryVillager.Skill.IDENTIFY);
         Villager warriv = new Villager("Warriv", 35);
         Villager flawia = new Villager("Flawia", 25);
 
         Object objectDeckardCain = deckardCain;
         Object objectAkara = akara;
         //nie można wywołać na nich metod klasy ExtraordinaryVillager
-
-        kashya.sayHello();
-        akara.sayHello();
-        gheed.sayHello();
-        deckardCain.sayHello();
-        warriv.sayHello();
-        flawia.sayHello();
+//
+//        kashya.sayHello();
+//        akara.sayHello();
+//        gheed.sayHello();
+//        deckardCain.sayHello();
+//        warriv.sayHello();
+//        flawia.sayHello();
 
         Villager villagers[] = {kashya, akara, gheed, deckardCain, warriv, flawia};
+        for(Villager v: villagers) {
+            v.sayHello();
+        }
+
 
         Monster monsters[] = {Monsters.andariel, Monsters.blacksmith};
 

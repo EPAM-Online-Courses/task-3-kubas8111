@@ -1,3 +1,4 @@
+package efs.task.oop;
 public class Villager implements Fighter{
     private String name;
     private int age;
@@ -44,7 +45,7 @@ public class Villager implements Fighter{
     }
 
     public void sayHello() {
-        System.out.println("Greetings traveler... I'm " + this.name + " and I'm " + this.age + " years old");
+        System.out.println("Greetings traveler... I'm " + getName() + " and I'm " + getAge() + " years old.");
     }
 
     @Override
